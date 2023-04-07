@@ -1,0 +1,28 @@
+###
+
+GET http://localhost:3000/books/
+Authorization: Bearer {"jwtToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InZpbmF5MTIzIiwiaWF0IjoxNjgwODUzNDkwfQ.67ywGsWv8e7-W17tn6jlkq_FFdvzKjk9MPzWsZlSh_U"}
+
+###
+
+POST http://localhost:3000/users/
+Content-Type: application/json
+
+{   
+    "name":"rahul",
+    "username":"vinay123",
+    "password": "vinay@456",
+    "gender": "Male",
+    "location":"hyderabad"
+}
+
+
+###
+
+POST http://localhost:3000/login/
+Content-Type: application/json
+
+{
+    "username":"vinay123",
+    "password": "vinay@456"
+}
